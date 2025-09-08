@@ -4,7 +4,7 @@ Welcome to the Coinbase Advanced API TypeScript SDK. This TypeScript project was
 
 Coinbase Advanced Trade offers a comprehensive API for traders, providing access to real-time market data, order management, and execution. Elevate your trading strategies and develop sophisticated solutions using our powerful tools and features.
 
-For more information on all the available REST endpoints, see the [API Reference](https://docs.cdp.coinbase.com/advanced-trade/reference/).
+For more information on all the available REST endpoints, see the [API Reference](https://docs.cdp.coinbase.com/api-reference/advanced-trade-api/rest-api/introduction).
 
 ---
 
@@ -44,7 +44,7 @@ node dist/main.js
 
 ## Coinbase Developer Platform (CDP) API Keys
 
-This SDK uses Cloud Developer Platform (CDP) API keys. To use this SDK, you will need to create a CDP API key and secret by following the instructions [here](https://docs.cdp.coinbase.com/advanced-trade/docs/getting-started).
+This SDK uses Coinbase Developer Platform (CDP) API keys. To use this SDK, you will need to create a [CDP API key and secret](https://portal.cdp.coinbase.com/projects/api-keys).
 Make sure to save your API key and secret in a safe place. You will not be able to retrieve your secret again.
 
 ---
@@ -80,7 +80,7 @@ const client = new CoinbaseAdvTradeClient(credentials);
 
 Here are a few examples requests:
 
-**[List Accounts](https://docs.cdp.coinbase.com/advanced-trade/reference/retailbrokerageapi_getaccounts)**
+**[List Accounts](https://docs.cdp.coinbase.com/api-reference/advanced-trade-api/rest-api/accounts/list-accounts)**
 
 ```
 const accountService = new AccountsService(client);
@@ -94,7 +94,7 @@ accountService
     });
 ```
 
-**[Get Product](https://docs.cdp.coinbase.com/advanced-trade/reference/retailbrokerageapi_getproduct)**
+**[Get Product](https://docs.cdp.coinbase.com/api-reference/advanced-trade-api/rest-api/products/get-product)**
 
 ```
 productService = new ProductsService(client);
@@ -108,7 +108,7 @@ productService
     });
 ```
 
-**[Create Order](https://docs.cdp.coinbase.com/advanced-trade/reference/retailbrokerageapi_postorder)**
+**[Create Order](https://docs.cdp.coinbase.com/api-reference/advanced-trade-api/rest-api/orders/create-order)**
 
 _$10 Market Buy on BTC-USD_
 
